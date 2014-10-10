@@ -64,7 +64,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 				
 				
 				
-				@RequestMapping( value ="/rest/knowledgeobjet.xml", method = RequestMethod.GET, headers = "Accept=application/xml")
+				@RequestMapping( method = RequestMethod.GET, headers = "Accept=application/xml")
 				public @ResponseBody  void showObjetsXml( ){ 
 						HttpHeaders headers = new HttpHeaders();
 						headers.add("Content-Type", "application/xml; charset=utf-8");	
